@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Logs
+*.log
+report_quality.log
+
+# Output directories
+quality_reports/
+backups/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Existing backend/frontend ignores
+backend/venv/
+backend/__pycache__/
+backend/uploads/*
+!backend/uploads/.gitkeep
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Temporary PDF stream and matching outputs
+match_stream_*.txt
+stream_match_*.txt
+stream_*_clean.txt
+stream_*_raw.txt
+
+# Secrets
+.env
+.env.*
+*.env
+
+# Ignore everything else to push only frontend, backend, and notebook
+/architecture_presentation/
+/assets/
+/forensic_ai_v3_outputs/
+/pfe_report_latex/
+/uploads/
+/tests/
+*.pdf
+*.mp4
+*.rar
+*.zip
+*.tar.gz

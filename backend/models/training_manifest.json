@@ -1,0 +1,27 @@
+{
+    "architecture": "VACMA v3",
+    "n_videos": 400,
+    "n_folds": 5,
+    "protocol": "StratifiedGroupKFold identity-disjoint",
+    "n_test_pooled": 400,
+    "mean_auc": 0.9205,
+    "auc_ci_lower": 0.8736,
+    "auc_ci_upper": 0.9587,
+    "n_bootstraps": 2000,
+    "fold_aucs": [
+        0.9918,
+        0.93,
+        0.8458,
+        0.9503,
+        0.9407
+    ],
+    "mean_f1": 0.9531,
+    "mean_acc": 0.9225,
+    "ablation": {
+        "visual_only": 0.9368,
+        "audio_only": 0.6744,
+        "late_fusion": 0.9396,
+        "cma_fusion": 0.9317
+    },
+    "timestamp": "2026-06-14 01:40:29"
+}

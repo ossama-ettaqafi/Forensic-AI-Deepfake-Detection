@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Premium Brand Gradients -->
+    <linearGradient id="forensicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" />
+      <stop offset="50%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.8" />
+    </linearGradient>
+    <!-- High-Tech Glow Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="intenseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur1" />
+      <feGaussianBlur stdDeviation="2" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Futuristic Cyber Grid / Hex Background Nodes (Subtle) -->
+  <g opacity="0.25">
+    <polygon points="64,8 112,36 112,92 64,120 16,92 16,36" fill="none" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3,3" />
+    <line x1="64" y1="8" x2="64" y2="120" stroke="#60a5fa" stroke-width="0.5" stroke-dasharray="2,2" />
+    <line x1="16" y1="36" x2="112" y2="92" stroke="#60a5fa" stroke-width="0.5" stroke-dasharray="2,2" />
+    <line x1="16" y1="92" x2="112" y2="36" stroke="#60a5fa" stroke-width="0.5" stroke-dasharray="2,2" />
+  </g>
+
+  <!-- Primary Shield - Outer Cyber Defense Matrix -->
+  <path d="M64 12 L108 26 V64 C108 92 88 114 64 122 C40 114 20 92 20 64 V26 L64 12 Z" 
+        fill="none" 
+        stroke="url(#forensicGrad)" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#neonGlow)" />
+
+  <!-- Inner Shield Glow Overlay -->
+  <path d="M64 20 L98 31 V64 C98 87 81 106 64 112 C47 106 30 87 30 64 V31 L64 20 Z" 
+        fill="none" 
+        stroke="url(#glowGrad)" 
+        stroke-width="1.5" 
+        opacity="0.6" />
+
+  <!-- Biometric Scanner / Facial Geometry Lines (Stylized V) -->
+  <path d="M42 48 L64 74 L86 48" 
+        fill="none" 
+        stroke="#06b6d4" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        filter="url(#neonGlow)" />
+        
+  <!-- Central Glowing Forensic Core (The Neural Node) -->
+  <g filter="url(#intenseGlow)">
+    <!-- Outer biometric ring -->
+    <circle cx="64" cy="64" r="14" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="6,4" />
+    <!-- Inner analytical pulse -->
+    <circle cx="64" cy="64" r="6" fill="#06b6d4" />
+    <circle cx="64" cy="64" r="2" fill="#ffffff" />
+  </g>
+
+  <!-- High-Tech Data Points / Network Satellites -->
+  <circle cx="42" cy="48" r="3.5" fill="#a78bfa" />
+  <circle cx="86" cy="48" r="3.5" fill="#a78bfa" />
+  <circle cx="64" cy="74" r="4.5" fill="#60a5fa" filter="url(#neonGlow)" />
+  <circle cx="64" cy="74" r="2.5" fill="#ffffff" />
+
+  <!-- Verification Laser / Scanning Horizontal Bar (Forensic Verification Active) -->
+  <line x1="28" y1="64" x2="100" y2="64" stroke="#22c55e" stroke-width="2" stroke-linecap="round" opacity="0.95" filter="url(#neonGlow)" />
+  
+</svg>
