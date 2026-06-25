@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # 🔬 Forensic.AI — Deepfake Integrity Matrix
 
@@ -35,7 +35,12 @@
 
 ## 🧠 Overview
 
+![Forensic.AI Main Dashboard](assets/dashboard_main.png)
+
 **Forensic.AI** is a full-stack deepfake detection platform that fuses visual and acoustic modalities to identify manipulated media with high accuracy. The system ingests a video file, extracts synchronized facial keyframes and Mel-spectrogram audio features, then fuses them via a **Multi-Head Cross-Attention (MHA)** mechanism to detect lip-sync mismatches and other AI-generated artifacts.
+
+![Forensic.AI Analysis View](assets/dashboard_analysis.png)
+
 
 A secondary **LLM Explainability** layer (powered by Gemini 1.5 Pro) generates structured forensic reports in plain English, making complex AI decisions interpretable for non-technical stakeholders.
 
